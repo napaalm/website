@@ -1,0 +1,108 @@
+baseURL 	    = "https://www.antonionapolitano.eu/"
+title		    = "Antonio Napolitano"
+languageCode	= "en-us"
+theme		    = "hello-friend-ng"
+
+DefaultContentLanguage	= "en"
+
+# PygmentsCodeFences = true
+# PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+#enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Antonio Napolitano"
+
+#[blackfriday]
+#  hrefTargetBlank = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04 -0700"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Metadata mostly used in document's head
+  description = "Antonio Napolitano"
+  #keywords = "homepage, blog"
+  keywords = "homepage"
+  images = [""]
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  [params.logo]
+    logoText	 = "$ cd /home/antonio/"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nap@antonionapolitano.eu"
+
+  [[params.social]]
+    name = "matrix"
+    url  = "https://matrix.to/#/@nap:antonionapolitano.eu"
+
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/napaa1m"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/napaalm"
+
+[taxonomies]
+    category = "categories"
+    tag      = "tags"
+
+[languages]
+  [languages.en]
+    weight         = 1
+    languageName   = "English"
+    homeSubtitle   = "Computer science and math enthusiast"
+    readOtherPosts = "Read other posts"
+
+    [[languages.en.menu.main]]
+      identifier = "italian"
+      name       = "🇮🇹"
+      url        = "/it/"
+
+#    [[languages.en.menu.main]]
+#      identifier = "blog"
+#      name = "blog"
+#      url = "/posts"
+
+  [languages.it]
+    weight         = 2
+    languageName   = "Italiano"
+    homeSubtitle   = "Appassionato di informatica e matematica"
+    readOtherPosts = "Leggi altri post"
+
+    [[languages.it.menu.main]]
+      identifier = "english"
+      name       = "🇬🇧"
+      url        = "../"
+
+#    [[languages.it.menu.main]]
+#      identifier = "blog"
+#      name = "blog"
+#      url = "/posts"
+
